@@ -14,7 +14,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <struts2.version>2.5.20</struts2.version>
-        <log4j2.version>2.9.1</log4j2.version>
+        <log4j2.version>2.11.2</log4j2.version>
         <jetty-plugin.version>9.4.11.v20180605</jetty-plugin.version>
     </properties>
 
@@ -28,6 +28,12 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
             <version>${log4j2.version}</version>
         </dependency>
     </dependencies>
