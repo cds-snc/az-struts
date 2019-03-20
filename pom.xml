@@ -3,19 +3,37 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.apache.struts</groupId>
-        <artifactId>struts-examples</artifactId>
-        <version>1.0.0</version>
-    </parent>
-    <artifactId>struts-hello</artifactId>
-    <name>Hello World Struts2 Example</name>
-    <description>Struts 2 example application</description>
+    <groupId>org.apache.struts</groupId>
+    <artifactId>pcraig3-struts</artifactId>
+    <version>1.0.0</version>
+    <name>Paul’s basic Struts 2 Example</name>
+    <description>Basic Struts 2 example application</description>
 
     <packaging>war</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <struts2.version>2.5.20</struts2.version>
+        <log4j2.version>2.9.1</log4j2.version>
+        <jetty-plugin.version>9.4.11.v20180605</jetty-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
-        <finalName>struts-hello</finalName>
+        <finalName>pcraig3-struts</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
@@ -23,7 +41,7 @@
                 <version>${jetty-plugin.version}</version>
                 <configuration>
                     <webApp>
-                        <contextPath>/${build.finalName}</contextPath>
+                        <contextPath>/${project.build.finalName}</contextPath>
                     </webApp>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>
