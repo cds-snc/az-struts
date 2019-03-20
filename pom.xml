@@ -8,14 +8,14 @@
         <artifactId>struts-examples</artifactId>
         <version>1.0.0</version>
     </parent>
-    <artifactId>basic-struts</artifactId>
-    <name>Basic Struts2 Example</name>
-    <description>Basic Struts 2 example application</description>
+    <artifactId>struts-hello</artifactId>
+    <name>Hello World Struts2 Example</name>
+    <description>Struts 2 example application</description>
 
     <packaging>war</packaging>
 
     <build>
-        <finalName>basic-struts</finalName>
+        <finalName>struts-hello</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
@@ -23,7 +23,7 @@
                 <version>${jetty-plugin.version}</version>
                 <configuration>
                     <webApp>
-                        <contextPath>/${project.artifactId}</contextPath>
+                        <contextPath>/${build.finalName}</contextPath>
                     </webApp>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>
