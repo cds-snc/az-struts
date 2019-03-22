@@ -9,5 +9,8 @@
   <body>
     <h1><s:property value="messageStore.message" /></h1>
     <p>I’ve said hello <s:property value="helloCount" /> times!</p>
+    <br />
+    <p><a href="<s:url action='index'/>">Index page</a></p>
+
   </body>
 </html>
