@@ -1,4 +1,4 @@
-package org.apache.struts.helloworld.model;
+package main.java.model;
 
 public class MessageStore {
     private String message;

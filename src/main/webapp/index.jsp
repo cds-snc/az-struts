@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Hello! - Struts 2 Application</title>
+    <title>Index page</title>
   </head>
   <body>
     <h1>Hello from CDS!</h1>
