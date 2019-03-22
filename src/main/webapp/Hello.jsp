@@ -8,5 +8,6 @@
   </head>
   <body>
     <h1><s:property value="messageStore.message" /></h1>
+    <p>I’ve said hello <s:property value="helloCount" /> times!</p>
   </body>
 </html>
