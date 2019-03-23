@@ -4,13 +4,13 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Hello page</title>
+    <title>Bonjour! — az struts</title>
   </head>
   <body>
     <h1><s:property value="messageStore.message" /></h1>
-    <p>I’ve said hello <s:property value="helloCount" /> times!</p>
+    <p>J’ai déjà dit « bonjour » <s:property value="helloCount" escapeJavaScript="true" /> fois!</p>
     <br />
-    <p><a href="<s:url action='index'/>">Index page</a></p>
+    <p><a href="<s:url action='index'/>">Retournez à la page d’accueil.</a></p>
 
   </body>
 </html>

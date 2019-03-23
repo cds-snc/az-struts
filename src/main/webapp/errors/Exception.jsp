@@ -4,17 +4,17 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Exception</title>
+	<title>Exception — az struts</title>
 </head>
 <body>
-	<h1>The application has malfunctioned.</h1>
+	<h1>L’application a rencontré un problème.</h1>
 
-	<p>Please contact Paul Craig with the following information:</p>
+	<h4>Exception Name</h4>
+	<p><s:property value="exception"/></p>
+	<h4>Exception Details</h4>
+	<p><s:property value="exceptionStack"/></p>
 
-	<h4>Exception Name: <s:property value="exception"/></h4>
-	<h4>Exception Details: <s:property value="exceptionStack"/></h4>
-
-	<p><a href="index.jsp">Return to the home page.</a></p>
+	<p><a href="index.jsp">Retournez à la page d’accueil.</a></p>
 </body>
 
 </html>

@@ -20,9 +20,6 @@ public class HelloAction extends ActionSupport {
             messageStore.setMessage("Bonjour " + this.name + "! Comment ça va?");
         }
 
-        if(helloCount > 2)
-            throw new Exception("This is bad");
-
         return SUCCESS;
     }
 

@@ -4,16 +4,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.struts</groupId>
-    <artifactId>pcraig3-struts</artifactId>
+    <artifactId>az-struts</artifactId>
     <version>1.0.0</version>
-    <name>Paul’s basic Struts 2 Example</name>
-    <description>Basic Struts 2 example application</description>
+    <name>az struts</name>
+    <description>A tiny Struts 2 application to trial deploying to Azure</description>
 
     <packaging>war</packaging>
 
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <struts2.version>2.5.20</struts2.version>
         <log4j2.version>2.11.2</log4j2.version>
@@ -67,7 +67,7 @@
     </dependencies>
 
     <build>
-        <finalName>pcraig3-struts</finalName>
+        <finalName>az-struts</finalName>
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>

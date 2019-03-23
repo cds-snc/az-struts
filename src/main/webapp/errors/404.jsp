@@ -4,12 +4,12 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>404 Error</title>
+    <title>Erreur 404 — az struts</title>
   </head>
   <body>
-    <h1>404 Error!</h1>
-    <h2>Sorry, but this page does not exist.</h2>
+    <h1>Erreur 404!</h1>
+    <h2>Désolé, la page que vous avez demandée n’existe pas.</h2>
 
-    <p><a href="index.jsp">Return to the home page.</a></p>
+    <p><a href="index.jsp">Retournez à la page d’accueil.</a></p>
   </body>
 </html>
