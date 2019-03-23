@@ -11,7 +11,7 @@ public class HelloAction extends ActionSupport {
 
     private String name;
 
-    public String execute() {
+    public String execute() throws Exception {
         messageStore = new MessageStore();
 
         helloCount++;
@@ -19,6 +19,9 @@ public class HelloAction extends ActionSupport {
         if (this.name != null) {
             messageStore.setMessage("Bonjour " + this.name + "! Comment ça va?");
         }
+
+        if(helloCount > 2)
+            throw new Exception("This is bad");
 
         return SUCCESS;
     }
