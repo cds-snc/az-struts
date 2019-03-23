@@ -1,6 +1,6 @@
-package main.java.actions;
+package action;
 
-import main.java.model.MessageStore;
+import model.MessageStore;
 
 import com.opensymphony.xwork2.ActionSupport;
 
