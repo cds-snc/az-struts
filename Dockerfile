@@ -4,6 +4,8 @@ FROM jetty:9.4-alpine
 # Add Maintainer Info
 LABEL maintainer="paul.craig@cds-snc.ca"
 
+ENV STRUTS_DEV_MODE false
+
 ARG ARTIFACT_ID
 
 # The application's jar file

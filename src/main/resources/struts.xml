@@ -5,7 +5,7 @@
 
 <struts>
 
-    <constant name="struts.devMode" value="true" />
+    <constant name="struts.devMode" value="${env.STRUTS_DEV_MODE:true}"/>
 
     <package name="basicstruts2" extends="struts-default">
 
