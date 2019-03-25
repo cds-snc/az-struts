@@ -1,6 +1,6 @@
 # az-struts
 
-This is a tiny proof-of-concept [Struts 2](https://struts.apache.org/) app to trial Azure container deployments.
+This is a tiny [Struts 2](https://struts.apache.org/) app to trial Azure container deployments.
 
 ## Getting started
 
