@@ -15,10 +15,12 @@
         <a href="https://azure.microsoft.com/en-ca/overview/what-is-azure/" target="_blank">Azure</a>.
     </p>
 
-    <c:set var = "sha" scope="page" value = "${System.getenv('GITHUB_SHA')}"/>
+    <c:set var="sha" scope="page" value="${System.getenv('GITHUB_SHA')}"/>
     <c:if test="${sha != null}">
-       <p>Dernière commit: <c:out value = "${sha}"/></p>
+        <c:set var="shaUrl" scope="page" value="https://github.com/cds-snc/az-struts/commit/${sha}"/>
+        <p>Dernière commit: <a href="<c:url value="${shaUrl}" />" target="_blank"><c:out value="${sha}"/></a></p>
     </c:if>
+
     <br />
     <p><a href="<s:url action='hello'/>">Bonjour!</a></p>
 
