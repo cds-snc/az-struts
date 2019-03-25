@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Exception — az struts</title>
-</head>
-<body>
-	<h1>L’application a rencontré un problème.</h1>
+<t:wrapper>
+    <jsp:attribute name="title">Exception — az struts</jsp:attribute>
+    <jsp:body>
 
-	<h4>Exception Name</h4>
-	<p><s:property value="exception"/></p>
-	<h4>Exception Details</h4>
-	<p><s:property value="exceptionStack"/></p>
+        <h1>L’application a rencontré un problème.</h1>
 
-	<p><a href="index.jsp">Retournez à la page d’accueil.</a></p>
-</body>
+        <h4>Exception Name</h4>
+        <p><s:property value="exception"/></p>
+        <h4>Exception Details</h4>
+        <p><s:property value="exceptionStack"/></p>
 
-</html>
+        <br />
+
+        <p><a href="index.jsp">Retournez à la page d’accueil.</a></p>
+
+    </jsp:body>
+</t:wrapper>
