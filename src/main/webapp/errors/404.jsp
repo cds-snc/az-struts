@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Erreur 404 — az struts</title>
-  </head>
-  <body>
-    <h1>Erreur 404!</h1>
-    <h2>Désolé, la page que vous avez demandée n’existe pas.</h2>
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<t:wrapper>
+    <jsp:attribute name="title">Erreur 404 — az struts</jsp:attribute>
+    <jsp:body>
 
-    <p><a href="index.jsp">Retournez à la page d’accueil.</a></p>
-  </body>
-</html>
+        <h1>Erreur 404!</h1>
+        <p>Désolé, la page que vous avez demandée n’existe pas.</p>
+
+        <p><a href="index.jsp">Retournez à la page d’accueil.</a></p>
+
+    </jsp:body>
+</t:wrapper>
