@@ -17,6 +17,8 @@
     </style>
   </head>
     <body>
-      <jsp:doBody/>
+      <main>
+        <jsp:doBody/>
+      </main>
     </body>
 </html>
