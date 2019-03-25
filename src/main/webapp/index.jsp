@@ -16,7 +16,7 @@
         <c:set var="sha" scope="page" value="${System.getenv('GITHUB_SHA')}"/>
         <c:if test="${sha != null}">
             <c:set var="shaUrl" scope="page" value="https://github.com/cds-snc/az-struts/commit/${sha}"/>
-            <p>Dernière commit: <a href="<c:url value="${shaUrl}" />" target="_blank"><c:out value="${sha}"/></a></p>
+            <p>Dernier commit: <a href="<c:url value="${shaUrl}" />" target="_blank"><c:out value="${sha}"/></a></p>
         </c:if>
 
         <br />
