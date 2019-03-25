@@ -17,7 +17,7 @@ action "Run unit tests" {
 action "If master branch" {
   uses = "actions/bin/filter@24a566c2524e05ebedadef0a285f72dc9b631411"
   needs = ["Lint Dockerfile", "Run unit tests"]
-  args = "branch workflow"
+  args = "branch master"
 }
 
 action "Login into Docker Hub" {
