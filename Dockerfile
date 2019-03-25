@@ -4,6 +4,9 @@ FROM jetty:9.4-alpine
 # Add Maintainer Info
 LABEL maintainer="paul.craig@cds-snc.ca"
 
+ARG GITHUB_SHA_ARG
+ENV GITHUB_SHA=$GITHUB_SHA_ARG
+
 ENV STRUTS_DEV_MODE false
 
 ARG ARTIFACT_ID

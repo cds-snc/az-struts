@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +12,13 @@
     <p>Ici, c’est une toute petite application
         <a href="https://struts.apache.org/index.html" target="_blank">Struts 2</a>
         à expérimenter en déploiement sur
-        <a href="https://azure.microsoft.com/en-ca/overview/what-is-azure/" target="_blank">Azure</a>.</p>
+        <a href="https://azure.microsoft.com/en-ca/overview/what-is-azure/" target="_blank">Azure</a>.
+    </p>
+
+    <c:set var = "sha" scope="page" value = "${System.getenv('GITHUB_SHA')}"/>
+    <c:if test="${sha != null}">
+       <p>Dernière commit: <c:out value = "${sha}"/></p>
+    </c:if>
     <br />
     <p><a href="<s:url action='hello'/>">Bonjour!</a></p>
 

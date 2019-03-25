@@ -35,7 +35,7 @@ action "Maven clean install" {
 action "Build a Docker container" {
   uses = "actions/docker/cli@8cdf801b322af5f369e00d85e9cf3a7122f49108"
   needs = ["Maven clean install"]
-  args = ["build --build-arg ARTIFACT_ID=az-struts -t base ."]
+  args = ["build --build-arg ARTIFACT_ID=az-struts --build-arg GITHUB_SHA_ARG=$GITHUB_SHA -t base ."]
 }
 
 action "Tag :latest" {
