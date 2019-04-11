@@ -7,7 +7,7 @@
 
     <constant name="struts.devMode" value="${env.STRUTS_DEV_MODE:true}"/>
 
-    <package name="basicstruts2" extends="struts-default">
+    <package name="az-struts" extends="struts-default">
 
         <!-- setup the default-stack exception mapping interceptor
  		so that any exceptions not caught by this application
