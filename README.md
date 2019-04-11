@@ -17,7 +17,7 @@ A docker container allows a developer to package up an application and all of it
 
 ```bash
 # create .war file
-./mvnm clean install
+./mvnw clean install
 
 # run application
 ./mvnw jetty:run
@@ -31,14 +31,14 @@ On a Mac, press `Control` + `C` to quit the running application.
 
 ```bash
 # run unit tests
-./mvnm clean test
+./mvnw clean test
 ```
 
 ## Build and run as a Docker container
 
 ```bash
 # create .war file in /target directory
-./mvnm clean install
+./mvnw clean install
 
 # build an image locally
 docker build --build-arg ARTIFACT_ID="az-struts" -t cdssnc/az-struts .
